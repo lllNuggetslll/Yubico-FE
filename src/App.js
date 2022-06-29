@@ -1,4 +1,4 @@
-import { ParentWrapper } from "./components/views";
+import { WeatherAppWrapper } from "./components/weatherAppWrapper";
 import { PlaceProvider, QueryProvider } from "./contexts";
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
     <div>
       <PlaceProvider>
         <QueryProvider>
-          <ParentWrapper />
+          <WeatherAppWrapper />
         </QueryProvider>
       </PlaceProvider>
     </div>
