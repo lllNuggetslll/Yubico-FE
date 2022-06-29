@@ -5,7 +5,7 @@ import { PlaceContext } from "../contexts/PlaceContext";
 
 export const useFiveDayWeather = () => {
   const { place } = useContext(PlaceContext);
-  const queryString = `https://api.openweathermap.org/data/2.5/forecast?lat=${place?.lat}&lon=${place?.lng}&appid=${process.env.REACT_APP_MAPBOX_API_KEY}`;
+  const queryString = `https://api.openweathermap.org/data/2.5/forecast?lat=${place?.lat}&lon=${place?.lng}&appid=${process.env.REACT_APP_OPENWEATHER_API_KEY}`;
 
   const { isLoading, error, data } = useQuery(
     ["fiveDayWeather", place?.lat, place?.lng],
