@@ -3,6 +3,9 @@ import styled from "styled-components";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { PlacesAutocomplete } from "../placesAutocomplete";
+import { TodaysWeather } from "../todaysWeather";
+import { AirPollution } from "../airPollution";
+import { FiveDayWeather } from "../fiveDayWeather";
 
 export const WeatherAppWrapper = () => {
   return (
@@ -13,30 +16,12 @@ export const WeatherAppWrapper = () => {
             <PlacesAutocomplete />
           </Grid>
           <Grid item xs={6} md={6}>
-            <Item>xs=6 md=4</Item>
+            <TodaysWeather />
           </Grid>
           <Grid item xs={6} md={6}>
-            <Emoji>😣</Emoji>
+            <AirPollution />
           </Grid>
-          <Grid item xs={6} md={2}>
-            {" "}
-            <Item>xs=6 md=8</Item>
-          </Grid>{" "}
-          <Grid item xs={6} md={2}>
-            <Item>xs=6 md=8</Item>
-          </Grid>{" "}
-          <Grid item xs={6} md={2}>
-            <Item>xs=6 md=8</Item>
-          </Grid>{" "}
-          <Grid item xs={6} md={2}>
-            <Item>xs=6 md=8</Item>
-          </Grid>{" "}
-          <Grid item xs={6} md={2}>
-            <Item>xs=6 md=8</Item>
-          </Grid>{" "}
-          <Grid item xs={6} md={2}>
-            <Item>xs=6 md=8</Item>
-          </Grid>
+          <FiveDayWeather />
         </Grid>
       </Box>
     </Wrapper>
@@ -46,13 +31,4 @@ export const WeatherAppWrapper = () => {
 const Wrapper = styled.div`
   border: 1px solid black;
   margin: 50px;
-`;
-
-const Item = styled.div`
-  border: 1px solid black;
-  height: 100%;
-`;
-
-const Emoji = styled.div`
-  font-size: 100px;
 `;
