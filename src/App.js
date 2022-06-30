@@ -1,15 +1,17 @@
 import { WeatherAppWrapper } from "./components/weatherAppWrapper";
-import { PlaceProvider, QueryProvider } from "./contexts";
+import { PlaceProvider, QueryProvider, UnitProvider } from "./contexts";
 
 function App() {
   return (
-    <div>
-      <PlaceProvider>
-        <QueryProvider>
-          <WeatherAppWrapper />
-        </QueryProvider>
-      </PlaceProvider>
-    </div>
+    <>
+      <UnitProvider>
+        <PlaceProvider>
+          <QueryProvider>
+            <WeatherAppWrapper />
+          </QueryProvider>
+        </PlaceProvider>
+      </UnitProvider>
+    </>
   );
 }
 
