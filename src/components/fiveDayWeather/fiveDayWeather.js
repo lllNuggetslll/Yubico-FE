@@ -8,17 +8,15 @@ export const FiveDayWeather = () => {
   const { data } = useFiveDayWeather();
   if (!data) return null;
 
-  const [day1, day2, day3, day4, day5] = data.list;
-
   return (
     <>
-      {[day1, day2, day3, day4, day5].map((day) => {
+      {data.list.map((day) => {
         const { temp, weather } = day;
         const { day: dayTemp, min, max } = temp;
         const { main, icon, description } = weather[0];
 
         return (
-          <Grid item xs={12} md={2.4}>
+          <Grid item xs={12} md={2.4} key={temp}>
             {dayTemp}
             {min}
             {max}
