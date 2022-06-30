@@ -6,15 +6,21 @@ import { PlacesAutocomplete } from "../placesAutocomplete";
 import { TodaysWeather } from "../todaysWeather";
 import { AirPollution } from "../airPollution";
 import { FiveDayWeather } from "../fiveDayWeather";
+import { UnitToggleButton } from "../unitToggleButton";
 
 export const WeatherAppWrapper = () => {
   return (
     <Wrapper>
       <Box sx={{ flexGrow: 1, margin: "5px" }}>
         <Grid container spacing={1}>
-          <Grid item xs={8} md={12}>
+          <Grid item xs={8} md={10}>
             <PlacesAutocomplete />
           </Grid>
+
+          <Grid item xs={8} md={2}>
+            <UnitToggleButton />
+          </Grid>
+
           <Grid item xs={6} md={6}>
             <TodaysWeather />
           </Grid>
