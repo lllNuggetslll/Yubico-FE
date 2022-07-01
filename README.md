@@ -23,11 +23,13 @@ You may also see any lint errors in the console.
 
 ## TODO:
 
-* Make more responsive
-* Add tests
-* Add loading states
-* Add Prefetching
-* Fix naming inconsistencies
-* Add Storybook stories
-* Shore up some styling
-* Add day of week
+- Make more responsive
+- Add tests
+- Add loading states
+- Add Prefetching
+- Fix naming inconsistencies
+- Add Storybook stories
+- Shore up some styling
+- Add day of week
+- Add empty states
+- Add Error handling
