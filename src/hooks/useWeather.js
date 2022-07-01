@@ -10,7 +10,7 @@ export const useWeather = () => {
   const queryString = `https://api.openweathermap.org/data/2.5/weather?lat=${place?.lat}&lon=${place?.lng}&units=${unit}&appid=${process.env.REACT_APP_OPENWEATHER_API_KEY}`;
 
   const { isLoading, error, data } = useQuery(
-    ["todaysWeather", place?.lat, place?.lng, unit],
+    ["todaysWeather", place?.result, unit],
     () => fetch(queryString).then((res) => res.json()),
     {
       enabled: !!place,

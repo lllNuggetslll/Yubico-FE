@@ -9,7 +9,7 @@ export const useAirPollution = () => {
   const queryString = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${place?.lat}&lon=${place?.lng}&appid=${process.env.REACT_APP_OPENWEATHER_API_KEY}`;
 
   const { isLoading, error, data } = useQuery(
-    ["airPollution", place?.lat, place?.lng],
+    ["airPollution", place?.result],
     () => fetch(queryString).then((res) => res.json()),
     { enabled: !!place }
   );
