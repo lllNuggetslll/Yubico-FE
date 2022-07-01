@@ -30,3 +30,4 @@ You may also see any lint errors in the console.
 * Fix naming inconsistencies
 * Add Storybook stories
 * Shore up some styling
+* Add day of week
