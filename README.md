@@ -20,3 +20,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+## TODO:
+
+* Make more responsive
+* Add tests
+* Add loading states
+* Add Prefetching
+* Fix naming inconsistencies
+* Add Storybook stories
+* Shore up some styling
