@@ -1,0 +1,1 @@
+export { convertToInteger } from "./convertToInteger";
