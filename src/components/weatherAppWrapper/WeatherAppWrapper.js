@@ -45,6 +45,7 @@ export const WeatherAppWrapper = () => {
         <Grid item xs={6} md={6}>
           <TodaysWeather />
         </Grid>
+
         <Grid item xs={6} md={6}>
           <AirPollution />
         </Grid>
